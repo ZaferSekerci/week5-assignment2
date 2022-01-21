@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.13" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Northwind.BusinessLogicLayer\Northwind.BusinessLogicLayer.csproj" />
+	  <ProjectReference Include="..\Northwind.DataAccessLayer\Northwind.DataAccessLayer.csproj" />
+	  <ProjectReference Include="..\Northwind.InterfaceLayer\Northwind.InterfaceLayer.csproj" />
+	</ItemGroup>
+
+</Project>
